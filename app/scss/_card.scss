@@ -1,0 +1,80 @@
+.container {
+  width: 100vw;
+  height: 200vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $VeryLightGray;
+
+  .card {
+    max-width: 20.4rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    text-align: left;
+
+    @include xxl {
+      display: flex;
+      flex-direction: row;
+      max-width: 57.5rem;
+    }
+
+    .cars {
+      padding: 3rem 3.05rem;
+      @include xxl {
+        padding: 3rem;
+      }
+      h2 {
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        font-family: "Big Shoulders Display", cursive;
+        color: $VeryLightGray;
+        margin-top: 1.95rem;
+      }
+      p {
+        color: $TransparentWhite;
+        line-height: 1.66;
+        margin-top: 1.6rem;
+      }
+      .btn {
+        background-color: $VeryLightGray;
+        color: $BrightOrange;
+        padding: 0.89rem 1.96rem;
+        margin-top: 1.55rem;
+        border-radius: 2rem;
+        display: inline-block;
+        transition: 200ms ease-in-out;
+
+        @include xxl {
+          margin-top: 5.2rem;
+          &:hover {
+            cursor: pointer;
+            background-color: transparent;
+            color: $VeryLightGray;
+            border: 2px solid $VeryLightGray;
+          }
+        }
+      }
+    }
+
+    .sedans {
+      background-color: $BrightOrange;
+      .btn {
+        color: $BrightOrange;
+      }
+    }
+
+    .suvs {
+      background-color: $DarkCyan;
+      .btn {
+        color: $DarkCyan;
+      }
+    }
+
+    .luxury {
+      background-color: $VeryDarkCyan;
+      .btn {
+        color: $VeryDarkCyan;
+      }
+    }
+  }
+}
