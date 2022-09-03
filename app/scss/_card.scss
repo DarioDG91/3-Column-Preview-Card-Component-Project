@@ -6,6 +6,11 @@
   justify-content: center;
   background-color: $VeryLightGray;
 
+  @include xxl {
+    height: 100vh;
+  }
+  
+
   .card {
     max-width: 20.4rem;
     border-radius: 0.5rem;
